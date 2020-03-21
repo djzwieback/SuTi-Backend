@@ -1,0 +1,11 @@
+version: '2'
+services:
+  suti-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/suti/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=suti
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
